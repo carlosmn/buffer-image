@@ -9,6 +9,7 @@ def destroy(widget, data=None):
     gtk.main_quit()
 
 w = gtk.Window(gtk.WINDOW_TOPLEVEL)
+w.set_title("Hello from python")
 w.connect('destroy', destroy)
 
 v = gtk.TextView()
